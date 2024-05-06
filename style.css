@@ -1,0 +1,12 @@
+.menu{
+    text-align: left; border-right: 1px;color: wheat; font-weight: 50; font-family: fantasy;
+    
+}
+.alt{
+    margin-top: 15%;
+    background-color: #4d0512; font-size: 30px;border-radius: 7px; padding-left: 1%;
+
+}
+#kiz{
+    text-align: right; width: 27%; float: right;
+}
