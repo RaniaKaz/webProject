@@ -1,39 +1,51 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="hakkımda.css">
+    <link rel="stylesheet" type="text/css" href="şehrim.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
     <script type="text/javascript" src="java.js"></script>
     <title>Rania's Website</title>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 </head>
 <body>
-    <header>
-        <p id="Hello">Hello..!</p>
-        <p id="welcome">-Welcome to my website-</p>
-        
-        
-    </header>
-   
-    <a href="https://en.wikipedia.org/wiki/Classical_guitar" target="_blank">
-        <img src="icons/cguitar.png" id="cguitar" alt="Classical guitar">
-    </a>
- 
-    
-    <nav> 
-        <div class="secenekler"> 
-            <a href="Hakkında.html" class="secenekler"> Hakkımda</a>
-            <a href="şehrim.html" class="secenekler">  &nbsp;&nbsp;Şehrim</a>
-            <a href="ilgiliAlan.html" class="secenekler"> &nbsp;&nbsp; İlgili Alanlarım</a>
-            <a href="CV.html" class="secenekler"> &nbsp;&nbsp;CV</a>
-            <a href="İletişim.html" class="secenekler">&nbsp;&nbsp;İletişim</a> 
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header>
+                <div class="col-12">
+                    <p id="Hello">Hello..!</p>
+                </div>
+                <div class="col-12">
+                    <p id="welcome">-Welcome to my website-</p>   
+                </div>
+            </header>
         </div>
-        <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
-            <img src="icons/girl.png" id="kiz">
-        </a>
-    
-    </nav>
+        <nav>
+            <div class="row">
+                <div class="col-xs-6 col-xl-1">
+                    <a href="Hakkında.html"> <p class="secenekler">Hakkımda</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1 ">
+                    <a href="şehrim.html"><p class="secenekler">Şehrim</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="mirasimiz.html" ><p class="secenekler">mirasımız</p></a> 
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="ilgiliAlan.html"><p class="secenekler">İlgili Alanlarım</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="CV.html"><p class="secenekler">CV</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="İletişim.html" ><p class="secenekler">İletişim</p></a> 
+                </div>
+                <div class="col-6 col-xl-6 d-none d-sm-block">
+                    <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
+                        <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
+                    </a>
+                </div>
+            </div>
+        </nav>
