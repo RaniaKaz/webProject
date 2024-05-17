@@ -41,8 +41,9 @@ main{
     display: inline-block;
     width: 98%; 
     border-radius: 7px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
      color: rgb(71, 32, 9);
     padding: 3%;
+    
 }
