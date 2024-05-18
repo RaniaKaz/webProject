@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
     <title>Rania's Website</title>
     <title>Login</title>
+    <style>
+        #login{
+            color: rgb(102, 21, 21);
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -50,7 +55,8 @@
                 <a href="İletişim.html" style="color: wheat; text-decoration: none; "><p class="secenekler">İletişim</p></a> 
             </div>
             <div class="col-xs-6 col-xl-1">
-                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
+                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler"
+                id="login">Log in</p></a> 
             </div>
             <div class="col-6 col-xl-5 d-none d-sm-block">
                 <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">

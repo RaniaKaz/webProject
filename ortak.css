@@ -29,8 +29,8 @@ header {
 }
 
 .secenekler a {
-    color: inherit !important; /* Ensure color inheritance */
-    text-decoration: none !important; /* Ensure no underline */
+    color: inherit !important;
+    text-decoration: none !important; 
 }
 
 
