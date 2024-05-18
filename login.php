@@ -11,21 +11,23 @@
 </head>
 <body>
 <div class="container-fluid">
-        <div class="row justify-content-center">
-            <header>
+        <header class="row justify-content-center">
+           
                 <div class="col-12">
                     <p id="Hello">Hello..!</p>
                 </div>
                 <div class="col-12">
-                    <p id="welcome">-Welcome to my website-</p>   
+                    <p id="welcome">-Welcome to my website-</p>
                 </div>
-            </header>
-        </div>
+         
+        </header>
+
+        
         <nav>
             <div class="row">
             <style>
                 a:hover .secenekler {
-                    color: lightblue;
+         
                     color: rgb(102, 21, 21);
                 }
             </style>
@@ -57,7 +59,10 @@
             </div>
             </div>
         </nav>
-        <main>
+  
+</div>
+<div class="container-fluid">
+<main style="text-align:center; padding: 30px 30px 30px 30px">
     <h2>Login</h2>
     <form action="" method="POST">
         <label for="username">Username:</label><br>
@@ -67,6 +72,8 @@
         <button type="submit" name="submit">Login</button>
     </form>
     </main>
+</div>
+        
     <?php
     // Check if form is submitted
     include("webProjct/Hakkında.html");

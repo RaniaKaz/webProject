@@ -1,6 +1,6 @@
 *{
     scroll-behavior: smooth;
-    font-family: Apple Chancery, cursive;
+    font-family: serif;
     
  }
  #Hello{ text-align: center; font-size: 50px;color:  rgb(71, 32, 9);}
@@ -37,13 +37,13 @@
 
 
 main{ 
-    background-color: wheat;
+    background-color: whitesmoke;
     display: inline-block;
     width: 98%; 
     border-radius: 7px;
     padding-left: 50px;
     padding-right: 50px;
-     color: wheat;
+    color: wheat;
     padding: 3%;
     
 }

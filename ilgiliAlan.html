@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="ilgiliAlan.css">
-    
     <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
     <script type="text/javascript" src="java.js"></script>
-    <title>NEO Data</title>
+    <title>Nasa</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
     <style>
         table {
             width: 100%;
@@ -24,103 +22,158 @@
         th {
             background-color: #f2f2f2;
         }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color:darkmagenta;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        a:hover .secenekler {
+           
+            color: rgb(102, 21, 21);
+        }
+        .container-fluid {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <header class="row justify-content-center">
-           
-                <div class="col-12">
-                    <p id="Hello">Hello..!</p>
-                </div>
-                <div class="col-12">
-                    <p id="welcome">-Welcome to my website-</p>   
-                </div>
-            
+            <div class="col-12">
+                <p id="Hello">Hello..!</p>
+            </div>
+            <div class="col-12">
+                <p id="welcome">-Welcome to my website-</p>   
+            </div>
         </header>
         
         <nav>
             <div class="row">
-            <style>
-                a:hover .secenekler {
-                    color: lightblue;
-                    color: rgb(102, 21, 21);
-                }
-            </style>
-            <div class="col-xs-6 col-xl-1">
-                <a href="Hakkimda.html" style="color: wheat; text-decoration: none; "> <p class="secenekler">Hakkımda</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1 ">
-                <a href="şehrim.html"style="color: wheat; text-decoration: none; "><p class="secenekler">Şehrim</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="mirasimiz.html" style="color: wheat; text-decoration: none; "><p class="secenekler">mirasımız</p></a> 
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="ilgiliAlan.html"style="color: wheat; text-decoration: none; "><p class="secenekler">İlgili Alanlarım</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="CV.html" style="color: wheat; text-decoration: none; "><p class="secenekler">CV</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="İletişim.html" style="color: wheat; text-decoration: none; "><p class="secenekler">İletişim</p></a> 
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
-            </div>
-            <div class="col-6 col-xl-5 d-none d-sm-block">
-                <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
-                    <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
-                </a>
-            </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="Hakkimda.html" style="color: wheat; text-decoration: none;"> <p class="secenekler">Hakkımda</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="şehrim.html" style="color: wheat; text-decoration: none;"><p class="secenekler">Şehrim</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="mirasimiz.html" style="color: wheat; text-decoration: none;"><p class="secenekler">Mirasımız</p></a> 
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="ilgiliAlan.html" style="color: wheat; text-decoration: none;"><p class="secenekler">İlgili Alanlarım</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="CV.html" style="color: wheat; text-decoration: none;"><p class="secenekler">CV</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="İletişim.html" style="color: wheat; text-decoration: none;"><p class="secenekler">İletişim</p></a> 
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="login.php" style="color: wheat; text-decoration: none;"><p class="secenekler">Log in</p></a> 
+                </div>
+                <div class="col-6 col-xl-5 d-none d-sm-block">
+                    <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
+                        <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
+                    </a>
+                </div>
             </div>
         </nav>
-  
-
-     </div>
-    <main style="background-image: url('icons/nasa.jpg'); background-size: cover;">
-        <h1>NASA Near Earth Object Data</h1>
-        <table>
-            <thead id="darkTop">
-                <tr>
-                    <th>Name</th>
-                    <th>Diameter (m)</th>
-                    <th>Velocity (km/s)</th>
-                    <th>Miss Distance (km)</th>
-                </tr>
-            </thead>
-            <tbody id="neoData">
-                <!-- Data will be dynamically inserted here -->
-            </tbody>
-        </table>
+    </div>
+<div class="container-fluid">
+    <main style="margin-bottom: 30px;">
+       
+            <h1 id="title">Loading...</h1>
+            <img id="image" src="" alt="NASA Astronomy Picture of the Day">
+            <p id="description">Please wait while we fetch the data.</p>
+        
 
         <script>
-            // Fetch NEO data from the API
-            fetch('https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z')
-                .then(response => response.json())
-                .then(data => {
-                    const neoData = document.getElementById('neoData');
-                    const nearEarthObjects = data.near_earth_objects;
-
-                    // Loop through each date in the data
-                    for (const date in nearEarthObjects) {
-                        if (nearEarthObjects.hasOwnProperty(date)) {
-                            // Loop through each NEO for the current date
-                            nearEarthObjects[date].forEach(neo => {
-                                const row = document.createElement('tr');
-                                row.innerHTML = `
-                                    <td>${neo.name}</td>
-                                    <td>${neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2)} - ${neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2)}</td>
-                                    <td>${neo.close_approach_data[0].relative_velocity.kilometers_per_second}</td>
-                                    <td>${neo.close_approach_data[0].miss_distance.kilometers}</td>
-                                `;
-                                neoData.appendChild(row);
-                            });
-                        }
-                    }
-                })
-                .catch(error => console.error('Error fetching NEO data:', error));
+            async function fetchAPOD() {
+                const apiKey = '7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z';
+                const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+                try {
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+                    document.getElementById('title').innerText = data.title;
+                    document.getElementById('image').src = data.url;
+                    document.getElementById('image').alt = data.title;
+                    document.getElementById('description').innerText = data.explanation;
+                } catch (error) {
+                    console.error('Error fetching the APOD data:', error);
+                    document.getElementById('title').innerText = 'Error';
+                    document.getElementById('description').innerText = 'Could not load the Astronomy Picture of the Day. Please try again later.';
+                }
+            }
+            document.addEventListener('DOMContentLoaded', fetchAPOD);
         </script>
     </main>
+</div>
+    
+<div class="container-fluid">
+    <main style="background-image: url('icons/nasa.jpg'); background-size: cover;">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>NASA Near Earth Object Data</h1>
+                <table>
+                    <thead id="darkTop">
+                        <tr>
+                            <th>Name</th>
+                            <th>Diameter (m)</th>
+                            <th>Velocity (km/s)</th>
+                            <th>Miss Distance (km)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="neoData">
+                        <!-- Data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+
+                <script>
+                    fetch('https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z')
+                        .then(response => response.json())
+                        .then(data => {
+                            const neoData = document.getElementById('neoData');
+                            const nearEarthObjects = data.near_earth_objects;
+
+                            for (const date in nearEarthObjects) {
+                                if (nearEarthObjects.hasOwnProperty(date)) {
+                                    nearEarthObjects[date].forEach(neo => {
+                                        const row = document.createElement('tr');
+                                        row.innerHTML = `
+                                            <td>${neo.name}</td>
+                                            <td>${neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2)} - ${neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2)}</td>
+                                            <td>${neo.close_approach_data[0].relative_velocity.kilometers_per_second}</td>
+                                            <td>${neo.close_approach_data[0].miss_distance.kilometers}</td>
+                                        `;
+                                        neoData.appendChild(row);
+                                    });
+                                }
+                            }
+                        })
+                        .catch(error => console.error('Error fetching NEO data:', error));
+                </script>
+            </div>
+        </div>
+    </main>
+</div>
+    
 </body>
 </html>
