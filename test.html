@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="stylesheet" type="text/css" href="ortak.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+    <script type="text/javascript" src="java.js"></script>
+    <title>Rania's Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        .container-fluid {
+           
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header>
+                <div class="col-12">
+                    <p id="Hello">Hello..!</p>
+                </div>
+                <div class="col-12">
+                    <p id="welcome">-Welcome to my website-</p>   
+                </div>
+            </header>
+        </div>
+        <nav>
+            <div class="row">
+            <style>
+                a:hover .secenekler {
+                    color: lightblue;
+                    color: rgb(102, 21, 21);
+                }
+            </style>
+            <div class="col-xs-6 col-xl-1">
+                <a href="Hakkimda.html" style="color: wheat; text-decoration: none; "> <p class="secenekler">Hakkımda</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1 ">
+                <a href="şehrim.html"style="color: wheat; text-decoration: none; "><p class="secenekler">Şehrim</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="mirasimiz.html" style="color: wheat; text-decoration: none; "><p class="secenekler">mirasımız</p></a> 
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="ilgiliAlan.html"style="color: wheat; text-decoration: none; "><p class="secenekler">İlgili Alanlarım</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="CV.html" style="color: wheat; text-decoration: none; "><p class="secenekler">CV</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="İletişim.html" style="color: wheat; text-decoration: none; "><p class="secenekler">İletişim</p></a> 
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
+            </div>
+            <div class="col-6 col-xl-5 d-none d-sm-block">
+                <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
+                    <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
+                </a>
+            </div>
+            </div>
+        </nav>
+        <main>
+            <h1 id="title">Loading...</h1>
+            <img id="image" src="" alt="NASA Astronomy Picture of the Day">
+            <p id="description">Please wait while we fetch the data.</p>
+        </main>
+        
+            
+       
+    
+        <script>
+            async function fetchAPOD() {
+                const apiKey = '7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z';
+                const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+                try {
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+                    document.getElementById('title').innerText = data.title;
+                    document.getElementById('image').src = data.url;
+                    document.getElementById('image').alt = data.title;
+                    document.getElementById('description').innerText = data.explanation;
+                } catch (error) {
+                    console.error('Error fetching the APOD data:', error);
+                    document.getElementById('title').innerText = 'Error';
+                    document.getElementById('description').innerText = 'Could not load the Astronomy Picture of the Day. Please try again later.';
+                }
+            }
+    
+            document.addEventListener('DOMContentLoaded', fetchAPOD);
+        </script>
+     </div>
+     
+</body>
+</html>

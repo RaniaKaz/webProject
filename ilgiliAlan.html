@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="stylesheet" type="text/css" href="ilgiliAlan.css">
+    
     <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
     <script type="text/javascript" src="java.js"></script>
     <title>NEO Data</title>
@@ -27,91 +28,99 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <header>
+        <header class="row justify-content-center">
+           
                 <div class="col-12">
                     <p id="Hello">Hello..!</p>
                 </div>
                 <div class="col-12">
                     <p id="welcome">-Welcome to my website-</p>   
                 </div>
-            </header>
-        </div>
+            
+        </header>
+        
         <nav>
             <div class="row">
-                <div class="col-xs-6 col-xl-1">
-                    <a href="Hakkimda.html"> <p class="secenekler">Hakkımda</p></a>
-                </div>
-                <div class="col-xs-6 col-xl-1 ">
-                    <a href="şehrim.html"><p class="secenekler">Şehrim</p></a>
-                </div>
-                <div class="col-xs-6 col-xl-1">
-                    <a href="mirasimiz.html" ><p class="secenekler">mirasımız</p></a> 
-                </div>
-                <div class="col-xs-6 col-xl-1">
-                    <a href="ilgiliAlan.html"><p class="secenekler">İlgili Alanlarım</p></a>
-                </div>
-                <div class="col-xs-6 col-xl-1">
-                    <a href="CV.html"><p class="secenekler">CV</p></a>
-                </div>
-                <div class="col-xs-6 col-xl-1">
-                    <a href="İletişim.html" ><p class="secenekler">İletişim</p></a> 
-                </div>
-                <div class="col-xs-6 col-xl-1">
-                    <a href="login.phpl" ><p class="secenekler">Log in</p></a> 
-                </div>
-                <div class="col-6 col-xl-5 d-none d-sm-block">
-                    <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
-                        <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
-                    </a>
-                </div>
+            <style>
+                a:hover .secenekler {
+                    color: lightblue;
+                    color: rgb(102, 21, 21);
+                }
+            </style>
+            <div class="col-xs-6 col-xl-1">
+                <a href="Hakkimda.html" style="color: wheat; text-decoration: none; "> <p class="secenekler">Hakkımda</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1 ">
+                <a href="şehrim.html"style="color: wheat; text-decoration: none; "><p class="secenekler">Şehrim</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="mirasimiz.html" style="color: wheat; text-decoration: none; "><p class="secenekler">mirasımız</p></a> 
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="ilgiliAlan.html"style="color: wheat; text-decoration: none; "><p class="secenekler">İlgili Alanlarım</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="CV.html" style="color: wheat; text-decoration: none; "><p class="secenekler">CV</p></a>
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="İletişim.html" style="color: wheat; text-decoration: none; "><p class="secenekler">İletişim</p></a> 
+            </div>
+            <div class="col-xs-6 col-xl-1">
+                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
+            </div>
+            <div class="col-6 col-xl-5 d-none d-sm-block">
+                <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
+                    <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
+                </a>
+            </div>
             </div>
         </nav>
+  
+
      </div>
-    <main>
+    <main style="background-image: url('icons/nasa.jpg'); background-size: cover;">
         <h1>NASA Near Earth Object Data</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Diameter (m)</th>
-                <th>Velocity (km/s)</th>
-                <th>Miss Distance (km)</th>
-            </tr>
-        </thead>
-        <tbody id="neoData">
-            <!-- Data will be dynamically inserted here -->
-        </tbody>
-    </table>
+        <table>
+            <thead id="darkTop">
+                <tr>
+                    <th>Name</th>
+                    <th>Diameter (m)</th>
+                    <th>Velocity (km/s)</th>
+                    <th>Miss Distance (km)</th>
+                </tr>
+            </thead>
+            <tbody id="neoData">
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
 
-    <script>
-        // Fetch NEO data from the API
-        fetch('https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z')
-            .then(response => response.json())
-            .then(data => {
-                const neoData = document.getElementById('neoData');
-                const nearEarthObjects = data.near_earth_objects;
+        <script>
+            // Fetch NEO data from the API
+            fetch('https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=7BxNJlvdCPDWyn6ThVbOEnBkhlWMDLLytASVKg4z')
+                .then(response => response.json())
+                .then(data => {
+                    const neoData = document.getElementById('neoData');
+                    const nearEarthObjects = data.near_earth_objects;
 
-                // Loop through each date in the data
-                for (const date in nearEarthObjects) {
-                    if (nearEarthObjects.hasOwnProperty(date)) {
-                        // Loop through each NEO for the current date
-                        nearEarthObjects[date].forEach(neo => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `
-                                <td>${neo.name}</td>
-                                <td>${neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2)} - ${neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2)}</td>
-                                <td>${neo.close_approach_data[0].relative_velocity.kilometers_per_second}</td>
-                                <td>${neo.close_approach_data[0].miss_distance.kilometers}</td>
-                            `;
-                            neoData.appendChild(row);
-                        });
+                    // Loop through each date in the data
+                    for (const date in nearEarthObjects) {
+                        if (nearEarthObjects.hasOwnProperty(date)) {
+                            // Loop through each NEO for the current date
+                            nearEarthObjects[date].forEach(neo => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `
+                                    <td>${neo.name}</td>
+                                    <td>${neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2)} - ${neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2)}</td>
+                                    <td>${neo.close_approach_data[0].relative_velocity.kilometers_per_second}</td>
+                                    <td>${neo.close_approach_data[0].miss_distance.kilometers}</td>
+                                `;
+                                neoData.appendChild(row);
+                            });
+                        }
                     }
-                }
-            })
-            .catch(error => console.error('Error fetching NEO data:', error));
-    </script>
-        </main>
-        
+                })
+                .catch(error => console.error('Error fetching NEO data:', error));
+        </script>
+    </main>
 </body>
 </html>

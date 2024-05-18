@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="şehrim.css">
+    <link rel="stylesheet" type="text/css" href="ortak.css">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
     <script type="text/javascript" src="java.js"></script>
     <title>Rania's Website</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <header>
-                <div class="col-12">
-                    <p id="Hello">Hello..!</p>
-                </div>
-                <div class="col-12">
-                    <p id="welcome">-Welcome to my website-</p>   
-                </div>
-            </header>
-        </div>
+        <header class="row justify-content-center">
+            <div class="col-12">
+                <p id="Hello">Hello..!</p>
+            </div>
+            <div class="col-12">
+                <p id="welcome">-Welcome to my website-</p>   
+            </div>
+        </header>
+      
         <nav>
             <div class="row">
+                <style>
+                    a:hover .secenekler {
+                        color: lightblue;
+                        color: rgb(102, 21, 21);
+                    }
+                </style>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="Hakkimda.html"> <p class="secenekler">Hakkımda</p></a>
+                    <a href="Hakkimda.html" style="color: wheat; text-decoration: none; "> <p class="secenekler">Hakkımda</p></a>
                 </div>
                 <div class="col-xs-6 col-xl-1 ">
-                    <a href="şehrim.html"><p class="secenekler">Şehrim</p></a>
+                    <a href="şehrim.html"style="color: wheat; text-decoration: none; "><p class="secenekler">Şehrim</p></a>
                 </div>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="mirasimiz.html" ><p class="secenekler">mirasımız</p></a> 
+                    <a href="mirasimiz.html" style="color: wheat; text-decoration: none; "><p class="secenekler">mirasımız</p></a> 
                 </div>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="ilgiliAlan.html"><p class="secenekler">İlgili Alanlarım</p></a>
+                    <a href="ilgiliAlan.html"style="color: wheat; text-decoration: none; "><p class="secenekler">İlgili Alanlarım</p></a>
                 </div>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="CV.html"><p class="secenekler">CV</p></a>
+                    <a href="CV.html" style="color: wheat; text-decoration: none; "><p class="secenekler">CV</p></a>
                 </div>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="İletişim.html" ><p class="secenekler">İletişim</p></a> 
+                    <a href="İletişim.html" style="color: wheat; text-decoration: none; "><p class="secenekler">İletişim</p></a> 
                 </div>
                 <div class="col-xs-6 col-xl-1">
-                    <a href="login.php" ><p class="secenekler">Log in</p></a> 
+                    <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
                 </div>
                 <div class="col-6 col-xl-5 d-none d-sm-block">
                     <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
@@ -52,8 +57,8 @@
                 </div>
             </div>
         </nav>
-
-        <main>
+      
+        <main class="container-fluid">
             <div class="row">
                 <div class="col">
                     <p id="damas">-DAMASCUS-</p>
@@ -73,44 +78,49 @@
                         </div>
                     </figure>
                 </article>
-            </div>
-            
-            <aside>
-                <div class="col-6">
-                    <p>
-                        Damascus is the oldest city in the world and is also called "the City of Jasmine".
-                    </p>
-                    <div class="col-6">
-                        <img src="icons/jasemin.jpg" alt="jasemine" id="jasemine">
+                <article id="CityOfJasemine">
+                    <div class="col-12">
+                        <p>
+                            Damascus is the oldest city in the world and is also called "the City of Jasmine".
+                        </p>
+                        <div class="col-6">
+                            <img src="icons/jasemin.jpg" alt="jasemine" id="jasemine">
+                        </div>
                     </div>
-                </div>
-            </aside>
-            <div class="col-12">
-                <div class="slider">
-                    <div class="slider-wrapper">
-                        <div class="slide">
-                            <a href="#" class="slide-link"></a>
-                            <img src="icons/castel.jpg" alt="Slide 1">
+                </article>
+                <figure class="col-6">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1925MVhrU2LjrA7OJS4MQo2nU9UM&ehbc=2E312F" width="640" height="480"></iframe>
+                </figure>
+                <section class="col-12" style="padding: 30px;">
+                    <div class="slider">
+                        <div class="slider-wrapper">
+                            <div class="slide">
+                                <a href="#" class="slide-link"></a>
+                                <img src="icons/castel.jpg" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                                <a href="https://en.wikipedia.org/wiki/Al-Hamidiyah_Souq" class="slide-link" target="_blank">
+                                    <img src="icons/hamidiye.jpg" alt="Slide 2">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://en.wikipedia.org/wiki/Umayyad_Square" class="slide-link" target="_blank">
+                                    <img src="icons/slider3.jpg" alt="Slide 3">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://en.wikipedia.org/wiki/Statue_of_Saladin" class="slide-link" target="_blank">
+                                    <img src="icons/salah.jpg" alt="Slide 4">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://en.wikipedia.org/wiki/Norias_of_Hama" class="slide-link" target="_blank">
+                                    <img src="icons/slider5.jpg" alt="Slide 5">
+                                </a>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <a href="#" class="slide-link"></a>
-                            <img src="icons/hamidiye.jpg" alt="Slide 2">
-                        </div>
-                        <div class="slide">
-                            <a href="#" class="slide-link"></a>
-                            <img src="icons/slider3.jpg" alt="Slide 2">
-                        </div>
-                        <div class="slide">
-                            <a href="#" class="slide-link"></a>
-                            <img src="icons/salah.jpg" alt="Slide 2">
-                        </div>
-                        <div class="slide">
-                            <a href="#" class="slide-link"></a>
-                            <img src="icons/slider5.jpg" alt="Slide 2">
-                        </div>
-                        
                     </div>
-                </div>
+                </section>
             </div>
             
         </main>
