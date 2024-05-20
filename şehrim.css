@@ -62,11 +62,8 @@ aside {
 }
 
 #jasemine {
-    max-width: 500%;
+    
+   width: 200px;
     height: auto;
 }
 
-#CityOfJasemine {
-    background-color: beige;
-    width: 30%;
-}
