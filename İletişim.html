@@ -6,102 +6,120 @@
     <link rel="stylesheet" type="text/css" href="iletisim.css">
     <link rel="stylesheet" type="text/css" href="ortak.css">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="java.js"></script>
-    <script type="text/javascript" src="iletişim.js"></script>
+    <script type="text/javascript" src="iletisim.js"></script>
     <title>Rania's Website</title>
     <style>
-        #iletisim{
+        #iletisim {
+            color: rgb(102, 21, 21);
+        }
+        .error-message {
+            color: red;
+        }
+        a:hover .secenekler {
             color: rgb(102, 21, 21);
         }
     </style>
-    
 </head>
 <body>
     <div class="container-fluid">
         <header class="row justify-content-center">
-           
-                <div class="col-12">
-                    <p id="Hello">Hello..!</p>
-                </div>
-                <div class="col-12">
-                    <p id="welcome">-Welcome to my website-</p>   
-                </div>
- 
-          
+            <div class="col-12">
+                <p id="Hello">Hello..!</p>
+            </div>
+            <div class="col-12">
+                <p id="welcome">-Welcome to my website-</p>
+            </div>
         </header>
-
         <nav>
             <div class="row">
-            <style>
-                a:hover .secenekler {
-                  
-                    color: rgb(102, 21, 21);
-                }
-            </style>
-            <div class="col-xs-6 col-xl-1">
-                <a href="Hakkimda.html" style="color: wheat; text-decoration: none; "> <p class="secenekler">Hakkımda</p></a>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="Hakkimda.html" style="color: wheat; text-decoration: none;"><p class="secenekler">Hakkımda</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="şehrim.html" style="color: wheat; text-decoration: none;"><p class="secenekler">Şehrim</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="mirasimiz.html" style="color: wheat; text-decoration: none;"><p class="secenekler">mirasımız</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="ilgiliAlan.html" style="color: wheat; text-decoration: none;"><p class="secenekler">İlgili Alanlarım</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="CV.html" style="color: wheat; text-decoration: none;"><p class="secenekler">CV</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="İletişim.html" style="color: wheat; text-decoration: none;">
+                        <p class="secenekler" id="iletisim">İletişim</p></a>
+                </div>
+                <div class="col-xs-6 col-xl-1">
+                    <a href="login.php" style="color: wheat; text-decoration: none;"><p class="secenekler">Log in</p></a>
+                </div>
+                <div class="col-6 col-xl-5 d-none d-sm-block">
+                    <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
+                        <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-6 col-xl-1 ">
-                <a href="şehrim.html"style="color: wheat; text-decoration: none; "><p class="secenekler">Şehrim</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="mirasimiz.html" style="color: wheat; text-decoration: none; "><p class="secenekler">mirasımız</p></a> 
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="ilgiliAlan.html"style="color: wheat; text-decoration: none; "><p class="secenekler">İlgili Alanlarım</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="CV.html" style="color: wheat; text-decoration: none; "><p class="secenekler">CV</p></a>
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="İletişim.html" style="color: wheat; text-decoration: none; ">
-                    <p class="secenekler" id="iletisim">İletişim</p></a> 
-            </div>
-            <div class="col-xs-6 col-xl-1">
-                <a href="login.php" style="color: wheat; text-decoration: none; "><p class="secenekler">Log in</p></a> 
-            </div>
-            <div class="col-6 col-xl-5 d-none d-sm-block">
-                <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">
-                    <img src="icons/girl.png" id="kiz" class="d-none d-sm-inline">
-                </a>
-            </div>
-            
         </nav>
     </div>
-        <div class="container-fluid">
-            <main>
-        
+    <div class="container-fluid">
+        <main>
             <div class="contact-container">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-center">
-                <div class="col-12 align-self-center">
+                    <div class="col-12 align-self-center">
                         <div id="title">
                             <h2>-Contact Me-</h2>
                             <hr>
                         </div>
-                </div>
-                <input type="hidden" name="access_key" value="b7def7a8-efb9-4a8a-95e0-c4bf46078280">
+                    </div>
+                    <input type="hidden" name="access_key" value="b7def7a8-efb9-4a8a-95e0-c4bf46078280">
+                    <span id="errorMessage" class="error-message"></span>
+                    <div class="col-12">
+                        <input required type="text" name="name" id="inputName" placeholder="Your Name" class="contact-inputs-text">
+                    </div>
+                    <div class="col-12">
+                        <input required type="email" name="email" id="inputEmail" placeholder="Your Email Address" class="contact-inputs-text">
+                    </div>
+                    <div class="col-12">
+                        <textarea required name="message" id="inputMessage" placeholder="Your Message" class="contact-inputs"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" id="submit">Submit1</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" id="submit2">Submit2</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#submit2').click(function() {
+                var name = $('#inputName').val().trim();
+                var email = $('#inputEmail').val().trim();
+                var message = $('#inputMessage').val().trim();
 
-                <div class="col-12">
-                    <input required type="text"  name="name" placeholder="Your Name" class="contact-inputs-text" >      
-                </div>
-                <div class="col-12">
-                    <input required type="email" name="email" placeholder="Your Email Adress" class="contact-inputs-text" >
-                </div>
-                <div class="col-12">
-                    <textarea required name="message" placeholder="Your Message" class="contact-inputs"></textarea> 
-                </div>
-                <dic class="col-12">
-                    <button type="submit" id="submit"> Submit</button>
-                    
-                </dic>
-                <div class="col-12">
-                    <button type="reset">Reset</button>
-                </div>
-               </form>
-            </div>       
-               
-            </main>
-        </div>
+                if (name === '' || email === '' || message === '') {
+                    $('#errorMessage').text("Please fill all the fields.");
+                    return false;
+                }
+
+                if (!email.includes('@')) {
+                    $('#errorMessage').text('Email must contain "@"');
+                    return false;
+                }
+
+                alert('Form submitted successfully!');
+                // Optionally, you can submit the form here if validation passes
+                // $(this).closest('form').submit();
+            });
+        });
+    </script>
 </body>
-
 </html>
